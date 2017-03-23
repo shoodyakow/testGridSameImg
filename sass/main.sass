@@ -1,0 +1,92 @@
+$head_accent_color: #1f6197
+$head_hover_color: #17587a
+
+$date_color: #ccc1c4
+
+$descr_acc_color: #222
+$descr_hover_color: #166195
+
+
+*
+	box-sizing: border-box
+
+.cf:before, .cf:after
+	content: ""
+	display: table
+.cf:after
+	clear: both
+
+a
+	text-decoration: none
+	
+body
+	font-family: 'PT Sans Narrow', sans-serif
+	.container
+		background: #fff
+		max-width: 990px
+		width: 100%
+		margin: 0 auto
+		padding: 30px 30px
+		@media screen and (max-width: 500px)
+			padding: 30px 12px
+		.wrap_news
+			float: left
+			width: 33.33%
+			padding: 6px
+			@media screen and (max-width: 800px)
+				width: 50%
+			@media screen and (max-width: 500px)
+				width: 100%
+			&:hover
+				.news_h
+					a
+						color: $head_hover_color
+				.news_img
+					img
+						opacity: 0.95
+				.news_description
+					a
+						color: $descr_hover_color
+			.wrap_news_head
+				margin-bottom: 5px
+			.news_h
+				float: left
+				white-space: nowrap
+				overflow: hidden
+				text-overflow: ellipsis
+				width: 65%
+				a
+					color: $head_accent_color
+					font-size: 19px
+					font-weight: bold
+					line-height: 16px
+			.news_date
+				float: right
+				color: $date_color
+				font-size: 15px
+				width: 35%
+				text-align: right
+			.news_img
+				img
+					width: 100%
+					border: solid 1px  #2C9BDD
+			.news_description
+				margin: 0
+				height: 100px
+				border-bottom: solid 2px #dbdbdb
+				a
+					color: $descr_acc_color
+					font-size: 17px
+
+
+
+
+
+
+
+
+
+
+
+
+
